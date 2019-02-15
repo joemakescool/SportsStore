@@ -9,7 +9,7 @@ namespace SportsStore.Models
 {
     public class EFOrderRepository : IOrderRepository
     {
-        private ApplicationDbContext context;
+        private ApplicationDbContext context; // // this is the dependancy injection
 
         public EFOrderRepository(ApplicationDbContext ctx)
         {
