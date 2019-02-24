@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SportsStore.Models;
 
+using Microsoft.AspNetCore.Authorization;
+
 namespace SportsStore.Controllers
 {
     public class OrderController : Controller
@@ -18,9 +20,12 @@ namespace SportsStore.Controllers
             cart = cartService;
         }
 
+        [Authorize]
         public ViewResult List() =>
             View(repository.Orders.Where(o => !o.Shipped));
+
         [HttpPost]
+        [Authorize]
         public IActionResult MarkShipped(int orderID)
         {
             Order order = repository.Orders
