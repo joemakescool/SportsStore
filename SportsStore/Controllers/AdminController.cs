@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SportsStore.Models;
-using System.Linq;
+
 namespace SportsStore.Controllers
 {
     public class AdminController : Controller
