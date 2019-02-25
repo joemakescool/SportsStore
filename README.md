@@ -1,4 +1,8 @@
 # SportsStore
+Chapter 12, 
+I'm not sure how the identityUser works or the Roles. I don't like the razer pages. i like the controller to models. I think Microsoft made a cool way of using controllers. But I don't think it'll stick around. They will keep changing it. MVC model has been around since the 70's. It's tried and true in my opinion. 
+
+
 Chapter 11
 One thing I notice was the controller and methods in a class. I found it interesting that the controller is mostly just passing data back and forth bewteen the controller. And if a model needs to make a change the controller pass in info to the class and the method of that class makes the chnage. I always was thinking that the controller did all the moving and changing. EFRepository has a save function and delete function. 
 [HttpPost]
